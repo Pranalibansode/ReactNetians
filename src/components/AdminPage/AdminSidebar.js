@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './AdminSidebarStyle.css';
 import { Link } from 'react-router-dom';
-import { Label } from '@mui/icons-material';
 
 const AdminSidebar = () => {
   const [show, setShow] = useState(false);
@@ -23,23 +22,23 @@ const AdminSidebar = () => {
             </h1>
 
             <div className='nav-list'>
-              <Link to='/dashboard' className='nav-link active-nav'>
+              <Link to='/employeeDetails' className='nav-link active-nav'>
                 <i className='fa-sharp fa-solid fa-users nav-link-icon'></i>
                 <span className='nav-link-name'>Employee Details</span>
               </Link>
-              <Link to='/hotel' className='nav-link'>
+              <Link to='/adminBanners' className='nav-link'>
                 <i className='fa-sharp fa-solid fa-images nav-link-icon'></i>
                 <span className='nav-link-name'>Banners</span>
               </Link>
-              <Link to='/gallery' className='nav-link'>
+              <Link to='/adminNews' className='nav-link'>
                 <i className='fa-sharp fa-solid fa-newspaper nav-link-icon'></i>
                 <span className='nav-link-name'>News</span>
               </Link>
-              <Link to='/gallery' className='nav-link'>
+              <Link to='/adminDocuments' className='nav-link'>
                 <i className='fa-sharp fa-solid fa-file-pdf nav-link-icon'></i>
                 <span className='nav-link-name'>Documents</span>
               </Link>
-              <Link to='/gallery' className='nav-link'>
+              <Link to='/thoughts' className='nav-link'>
                 <i className='fa-sharp fa-solid fa-heart-circle-check nav-link-icon'></i>
                 <span className='nav-link-name'>Motivational<br /><br />Thoughts</span>
               </Link>

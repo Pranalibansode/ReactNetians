@@ -10,6 +10,12 @@ import Social from './components/Pages/Social';
 import Stories from './components/Pages/Stories';
 import Documents from './components/Pages/Documents';
 import Profile from './components/Pages/Profile';
+import AdminEmployeeDetails from './components/AdminPage/AdminEmployeeDetails';
+import AdminBanners from './components/AdminPage/AdminBanners';
+import AdminDocuments from './components/AdminPage/AdminDocuments';
+import AdminNews from './components/AdminPage/AdminNews';
+import AdminThoughts from './components/AdminPage/AdminThoughts';
+
 function MainPage() {
    return (
 <>
@@ -18,6 +24,7 @@ function MainPage() {
                    <Route path='/EmployeeHomePage' element={<EmployeeHomePage />} />
                    <Route path='/AdminHomePage' element={<AdminHomePage />} />
 
+                {/*EmployeeHome page*/}
                    <Route path='/home' element={<Home />} />
                    <Route path='/sites' element={<Sites/>} />
                    <Route path='/social' element={<Social />} />
@@ -25,6 +32,13 @@ function MainPage() {
                    <Route path='/stories' element={<Stories />} />
                    <Route path='/documents' element={<Documents />} />
                    <Route path='/profile' element={<Profile />} />
+
+                {/*AdminHome page*/}
+                <Route path='/employeeDetails' element={<AdminEmployeeDetails />} />
+                   <Route path='/adminBanners' element={<AdminBanners/>} />
+                   <Route path='/adminNews' element={<AdminNews />} />
+                   <Route path='/adminDocuments' element={<AdminDocuments />} />
+                   <Route path='/thoughts' element={<AdminThoughts />} />
             </Routes>
     <div>
             <NavLink to='/EmployeeHomePage'>
