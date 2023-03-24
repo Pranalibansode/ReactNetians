@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/Pages/Home/Home";
+
+import MainPage from "./MainPage";
 function App() {
+
   return (
-    <>
-      <Home />
-    </>
+    <div>
+    <MainPage />
+   </div>
   );
 }
 

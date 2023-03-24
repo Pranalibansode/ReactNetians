@@ -31,7 +31,7 @@ function Navbar() {
        <div className="nav-container">
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                      <li className="nav-item">
-                        <NavLink to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
+                        <NavLink to="/home" activeClassName="active" className="nav-links" onClick={handleClick}>
                          HOME
                         </NavLink>
                      </li>
@@ -48,7 +48,7 @@ function Navbar() {
                         </NavLink>
                      </li>
                      <li className="nav-item">
-                        <NavLink to="/pople" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/employee" activeClassName="active"  className="nav-links" onClick={handleClick}>
                          POEPLE
                         </NavLink>
                      </li>
@@ -75,6 +75,7 @@ function Navbar() {
                 <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
       </div>
+      
     </nav>
   </>
   )

@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 function Stories() {
   return (
-    <div>Stories</div>
+    <div><Navbar /></div>
   )
 }
 
